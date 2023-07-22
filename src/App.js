@@ -86,7 +86,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar title="TextUtils" aboutText="About" mode={darkMode} gmode={gdarkmode} bmode={bdarkmode} toggleMode={toggleModefunc} tiggleMode={tiggleModefunc} triggleMode={triggleModefunc} />
+        <Navbar title="TextUtills" aboutText="About" mode={darkMode} gmode={gdarkmode} bmode={bdarkmode} toggleMode={toggleModefunc} tiggleMode={tiggleModefunc} triggleMode={triggleModefunc} />
         <Alert alert={alert} />
         <div className="container my-3" >
           <Routes>
