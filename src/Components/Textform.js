@@ -36,11 +36,11 @@ export default function Textform(props) {
         props.alert("Filter value Completed", "success")
     };
 
-    const [text, setText] = useState("Write something . . . . . .");
+    const [text, setText] = useState("");
 
     return (<>
         <div className="container">
-            <h1 className={` ${props.gmode === "success" ? "text-white" : "text-black"
+            <h1 style={{fontSize : '35px'}} className=  { `mb-4 ${props.gmode === "success" ? "text-white" : "text-black"
                 } || ${props.bmode === "primary" ? "text-white" : "text-black "
                 } || ${props.mode === "black" ? "text-white" : "text-black "}`}>{props.heading}</h1>
             <div className="mb-3">
@@ -55,7 +55,7 @@ export default function Textform(props) {
                 ></textarea>
             </div>
             <div className="button-class">
-                <button
+                <button disabled={text.length === 0}
                     className={`btn ${props.mode === 'dark'
                         ? 'btn-dark'
                         : props.gmode === 'success'
@@ -67,7 +67,7 @@ export default function Textform(props) {
                 >
                     Convert to Uppercase
                 </button>
-                <button className={`btn ${props.mode === 'dark'
+                <button disabled={text.length === 0} className={`btn ${props.mode === 'dark'
                     ? 'btn-dark'
                     : props.gmode === 'success'
                         ? 'btn-success'
@@ -77,7 +77,7 @@ export default function Textform(props) {
                     }`} onClick={Lowerbutton_func}>
                     Convert to Lowercase
                 </button>
-                <button className={`btn ${props.mode === 'dark'
+                <button disabled={text.length === 0} className={`btn ${props.mode === 'dark'
                     ? 'btn-dark'
                     : props.gmode === 'success'
                         ? 'btn-success'
@@ -87,7 +87,7 @@ export default function Textform(props) {
                     }`} onClick={Clearbutton_func}>
                     Clear the Box
                 </button>
-                <button className={`btn ${props.mode === 'dark'
+                <button disabled={text.length === 0} className={`btn ${props.mode === 'dark'
                     ? 'btn-dark'
                     : props.gmode === 'success'
                         ? 'btn-success'
@@ -97,7 +97,7 @@ export default function Textform(props) {
                     }`} onClick={filterbutton_func}>
                     Filter the value
                 </button>
-                <button className={`btn ${props.mode === 'dark'
+                <button disabled={text.length === 0} className={`btn ${props.mode === 'dark'
                     ? 'btn-dark'
                     : props.gmode === 'success'
                         ? 'btn-success'
@@ -107,7 +107,7 @@ export default function Textform(props) {
                     }`} onClick={handleCopy}>
                     Copy text
                 </button>
-                <button className={`btn ${props.mode === 'dark'
+                <button disabled={text.length === 0} className={`btn ${props.mode === 'dark'
                     ? 'btn-dark'
                     : props.gmode === 'success'
                         ? 'btn-success'
@@ -124,15 +124,15 @@ export default function Textform(props) {
             } || ${props.mode === 'black' ? 'text-white' : 'text-black '}`} id="Summary-id">
             <h2>Yours text Summary</h2>
             <p className="Sum-head">
-                {text.split(" ").filter((t) => t !== "").length} words {text.length}{" "}
+                {text.split(/\s+/).filter((t) => t !== "").length} words {text.length}{" "}
                 characters
             </p>
             <p className="Sum-head">
-                {0.008 * text.split(" ").filter((t) => t !== "").length} minutes to
+                {0.008 * text.split(/\s+/).filter((t) => t !== "").length} minutes to
                 read above paragraph or line
             </p>
             <h2>Preview</h2>
-            <p>{text}</p>
+            <p>{text.length === 0 ? 'Nothing to Preview!' : text}</p>
         </div>
     </>
     );

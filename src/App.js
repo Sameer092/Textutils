@@ -4,12 +4,7 @@ import About from "./Components/About";
 import Navbar from "./Components/Navbar";
 import Textform from "./Components/Textform";
 import Alert from "./Components/Alert";
-// import {
-//   BrowserRouter as Router,
-//   Switch,
-//   Route,
-//   Link
-// } from "react-router-dom";
+
 import {
   BrowserRouter,
   Route,
@@ -90,16 +85,16 @@ function App() {
         <Alert alert={alert} />
         <div className="container my-3" >
           <Routes>
-            <Route exact path="/about" element={<About />}></Route>
+            <Route exact path="/about" element={<About  mode={darkMode}/>}></Route>
             <Route
               exact path="/"
               element={
-                <Textform heading="Enter the Text to analyze below" mode={Mode} gmode={gMode} bmode={bMode} alert={showAlert} />
+                <Textform heading="TextUtils - Word Counter | Character Counter | Remove Extra Spaces" mode={Mode} gmode={gMode} bmode={bMode} alert={showAlert} />
               }
-            ></Route>
-          </Routes>
+             ></Route>
+           </Routes> 
         </div>
-      </BrowserRouter>
+       </BrowserRouter> 
     </>
   );
 }
