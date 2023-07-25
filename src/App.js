@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "./App.css";
-// import About from "./Components/About";
+import About from "./Components/About";
 import Navbar from "./Components/Navbar";
 import Textform from "./Components/Textform";
 import Alert from "./Components/Alert";
 
-// import {
-//   BrowserRouter,
-//   Route,
-//   Routes
-// } from "react-router-dom";
+import {
+  BrowserRouter,
+  Route,
+  Routes
+} from "react-router-dom";
 
 
 function App() {
@@ -80,21 +80,21 @@ function App() {
 
   return (
     <>
-      {/* <BrowserRouter> */}
+      <BrowserRouter>
         <Navbar title="TextUtills" aboutText="About" mode={darkMode} gmode={gdarkmode} bmode={bdarkmode} toggleMode={toggleModefunc} tiggleMode={tiggleModefunc} triggleMode={triggleModefunc} />
         <Alert alert={alert} />
         <div className="container my-3" >
-          {/* <Routes>
+          <Routes>
             <Route exact path="/about" element={<About  mode={darkMode}/>}></Route>
             <Route
               exact path="/"
-              element={ */}
+              element={
                 <Textform heading="TextUtils - Word Counter | Character Counter | Remove Extra Spaces" mode={Mode} gmode={gMode} bmode={bMode} alert={showAlert} />
-               {/* } */}
-             {/* ></Route> */}
-           {/* </Routes>  */}
+              }
+             ></Route>
+           </Routes> 
         </div>
-       {/* </BrowserRouter>  */}
+       </BrowserRouter> 
     </>
   );
 }

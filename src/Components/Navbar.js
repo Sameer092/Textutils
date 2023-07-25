@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navbar(props) {
     return (
@@ -14,10 +14,10 @@ export default function Navbar(props) {
                     }`}
             >
                 <div className="container-fluid">
-                    <a className={`navbar-brand ${props.gmode === "success" || props.bmode === "primary" || props.mode === "dark" ? "text-white" : "text-black"
-                        }`} href="#">
+                    <Link className={`navbar-brand ${props.gmode === "success" || props.bmode === "primary" || props.mode === "dark" ? "text-white" : "text-black"
+                        }`} to="/">
                         {props.title}
-                    </a>
+                    </Link>
                     <button
                         className="navbar-toggler"
                         type="button"
@@ -32,16 +32,16 @@ export default function Navbar(props) {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <a className={`nav-link active ${props.gmode === "success" || props.bmode === "primary" || props.mode === "dark" ? "text-white" : "text-black"
-                                    }`} aria-current="page" href="#">
+                                <Link className={`nav-link active ${props.gmode === "success" || props.bmode === "primary" || props.mode === "dark" ? "text-white" : "text-black"
+                                    }`} aria-current="page" to="/">
                                     Home
-                                </a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className={`nav-link ${props.gmode === "success" || props.bmode === "primary" || props.mode === "dark" ? "text-white" : "text-black"
-                                    }`} href="#">
+                                <Link className={`nav-link ${props.gmode === "success" || props.bmode === "primary" || props.mode === "dark" ? "text-white" : "text-black"
+                                    }`} to="/about">
                                     {props.aboutText}
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         <form className="d-flex ">
