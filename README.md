@@ -78,19 +78,22 @@ Don't forget to give the project a star! Thanks again!
 ## `App-Module`
 
 ### Landing Page
-![image](https://github.com/Sameer092/WittyNewsWire/blob/master/images/1.png)
-### Light Mode with Technology Headlines
-![image](https://github.com/Sameer092/WittyNewsWire/blob/master/images/2.png)
-### Dark Mode with Search Feature
-![image](https://github.com/Sameer092/WittyNewsWire/blob/master/images/22.png)
-### Entertainment Headlines
-![image](https://github.com/Sameer092/WittyNewsWire/blob/master/images/4.png)
-### Business Headlines
-![image](https://github.com/Sameer092/WittyNewsWire/blob/master/images/5.png)
-### Search Feature
-![image](https://github.com/Sameer092/WittyNewsWire/blob/master/images/11.png)
-### Sports Headlines
-![image](https://github.com/Sameer092/WittyNewsWire/blob/master/images/3.png)
+![image](https://github.com/Sameer092/Textutils/blob/master/images/Land%20Page.png)
+### Summary and Preview
+![image](https://github.com/Sameer092/Textutils/blob/master/images/Text%20Summary%20and%20Preview.png)
+### Blue Mode
+![image](https://github.com/Sameer092/Textutils/blob/master/images/Blue%20Mode.png)
+### Uppercase Feature
+![image](https://github.com/Sameer092/Textutils/blob/master/images/Uppercase%20feature.png)
+### Filter S(s) Value from Text
+![image](https://github.com/Sameer092/Textutils/blob/master/images/Filter%20S%20from%20the%20text.png)
+### lowercase Feature
+![image](https://github.com/Sameer092/Textutils/blob/master/images/Lowercase%20feature.png)
+### About
+![image](https://github.com/Sameer092/Textutils/blob/master/images/About.png)
+### Green Mode
+![image](https://github.com/Sameer092/Textutils/blob/master/images/Green%20Mode.png)
+
 
 
 ---
